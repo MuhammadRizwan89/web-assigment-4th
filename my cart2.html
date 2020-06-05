@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="Images/logo-v1.png" alt="LOGO" style="width: 250px; height: 100px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+          </ul>
+          <span class="navbar-text">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    SHOP
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="shop.html">BABY CLOTHE'S</a>
+                    <a class="dropdown-item" href="shop.html">BABA CLOTHE'S</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="shop.html">COSMATIC'S</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about-us.html">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact us.html">CONTACT US</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="my cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="login.html"><i class="fa fa-user-circle" aria-hidden="true"></i>
+
+                    </a>
+                  </li>
+              </ul>
+          </span>
+        </div>
+      </nav>
+      <!-- //////////////////////////navbar End///////////////////////// -->
+
+
+       <!-- Breadcrumb Area Start -->
+       <div class="breadcrumb-area bg-dark">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Cart</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- Breadcrumb Area End -->
+    <!-- Cart Main Area Start -->
+    <div class="cart-main-area ptb-80">
+        <div class="container">
+            <form action="#">
+                <div class="cart-table table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="p-image"></th>
+                                <th class="p-name">Product Name</th>
+                                <th class="p-amount">Unit Price</th>
+                                <th class="p-quantity">Qty</th>
+                                <th class="p-total">SubTotal</th>
+                                <th class="p-edit">Edit</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="p-image">
+                                    <a href="product-details.html"><img alt="" src="Images/baba2.png"></a>
+                                </td>
+                                <td class="p-name"><a href="product-details.html">Bodysuit Pack</a></td>
+                                <td class="p-amount">Rs 890.00</td>
+                                <td class="p-quantity"><input maxlength="12" type="text" value="1" name="quantity"></td>
+                                <td class="p-total"><span>Rs 890.00</span></td>
+                                <td class="edit"><a href="shop.html"><img src="Images/delete.png" alt=""></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="all-cart-buttons">
+                    <button class="button" type="button"><span>Continue Shopping</span></button>
+                    <button class="button" type="button"><span>CLEAR CART</span></button>
+                    <button class="button" type="button"><span>Update Cart</span></button>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="ht-shipping-content">
+                            <h3>RELATED PRODUCTS</h3>
+                            <p>Base on your selection, you may be interested in the following items:</p>  
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="ht-shipping-content">
+                            <h3>Discount Code</h3>
+                            <p>Enter your coupon code if you have one</p>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="postal-code">
+                                        <input type="text" placeholder="">
+                                    </div>
+                                    <div class="buttons-set">
+                                        <button class="button" type="button"><span>Apply Coupon</span></button>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="ht-shipping-content">
+                            <h4>Estimate Shipping And Tax</h4>
+                            <p>Enter your destination to get shipping &amp; tax</p>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-6">
+                                    <div class="level">
+                                        Country <span class="required">*</span>
+                                    </div>
+                                    <div class=" shipping-wrapper">
+                                      <select class="country">
+                                        <option value="state">Select</option>
+                                        <option value="state">Bahasa Indonesia</option>
+                                        <option value="state">Bahasa Melayu</option>		
+                                        <option value="state">Deutsch (Deutschland)</option>		
+                                        <option value="state">English (Australia)</option>		
+                                        <option value="state">English (Canada)</option>		
+                                        <option value="state">English (Paktistan)</option>		
+                                        <option value="state">English (Ireland)</option>		
+                                        <option value="state">English (Maktoob)</option>		
+                                        <option value="state">English (Malaysia)</option>		
+                                      </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-6">
+                                    <div class="level">
+                                        State/Province
+                                    </div>
+                                    <div class=" shipping-wrapper">
+                                      <select class="country">
+                                        <option value="state">Select</option>
+                                        <option value="state">South Carolina</option>
+                                        <option value="state">South Dakota</option>
+                                        <option value="state">Tennessee</option>		
+                                        <option value="state">Texas</option>		
+                                        <option value="state">Utah</option>		
+                                        <option value="state">Vermont</option>		
+                                        <option value="state">Virginia</option>		
+                                        <option value="state">Washington</option>		
+                                        <option value="state">West Virginia</option>		
+                                        <option value="state">Wyoming</option>		
+                                      </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="postal-code">
+                                        <div class="level">
+                                            Zip / Postal Code 
+                                        </div>
+                                        <input type="text" placeholder="" name="zip-code">
+                                    </div>
+                                    <div class="buttons-set">
+                                        <button class="button" type="button"><span>Get a Quote</span></button>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="ht-shipping-content">
+                            <h3>Total</h3>
+                            <div class="amount-totals">
+                                <p class="total">Subtotal <span>$156.87</span></p>
+                                <p class="total">Grandtotal <span>$313.74</span></p>
+                                <button class="button" type="button"><span>Procced to checkout</span></button>
+                                <div class="clearfix"></div>
+                                <p class="floatright">Checkout with multiples address</p>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Cart Main Area End -->  
+     
+     <!-- Footer Area Start -->
+     <footer class="footer-area ">
+      <div class="footer-top pt-80 pb-80">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-3 col-md-5">
+                      <div class="single-footer-widget">
+                          <div class="footer-logo">
+                              <a href="index.html"><img class="fotrlogo" src="Images/logo-v1.png" alt=""></a>
+                          </div>
+                          <div class="single-footer-text">
+                              <span>Addresss: Manzoor Colony , Shalimar Bakry&Sweets.</span>
+                              <span>Phone 0311-2935345 </span>
+                              <span>Phone 0302-2312523</span>
+                              <span>Fax : (800) 123 456 789</span>
+                              <span>mrizwansaeed89xclusive@gmail.com</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-2 col-md-3">
+                      <div class="single-footer-widget">
+                          <h4>ABOUT US</h4>
+                          <ul class="footer-widget-list">              
+                              <li><a href="#">Site Map</a></li>
+                              <li><a href="#">Specials</a></li>
+                              <li><a href="#">Delivery Info</a></li>
+                              <li><a href="#">Order History</a></li>
+                              <li><a href="#">Privacy Policy</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-lg-2 col-md-4">
+                      <div class="single-footer-widget">
+                          <h4>INFORMATION</h4>
+                          <ul class="footer-widget-list">              
+                              <li><a href="account.html">My Account</a></li>
+                              <li><a href="#">Gift Cards</a></li>
+                              <li><a href="#">Return Policy</a></li>
+                              <li><a href="#">Your Orders</a></li>
+                              <li><a href="#">Subway</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-lg-2 col-md-3">
+                      <div class="single-footer-widget">
+                          <h4>my account</h4>
+                          <ul class="footer-widget-list">              
+                              <li><a href="account.html">My Account</a></li>
+                              <li><a href="checkout.html">Checkout</a></li>
+                              <li><a href="account.html">Login</a></li>
+                              <li><a href="#">Order status</a></li>
+                              <li><a href="#">Site Map</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                      <div class="single-footer-widget">
+                          <h4>sign up newsletter</h4>
+                          <p>Be the first to hear about new trending and offers and see how youve helped</p>
+                          <div class="newsletter-form mc_embed_signup">
+                              <form action="http://devitems.us11.list-manage.com/subscribe/post?u=6bbb9b6f5827bd842d9640c82&amp;id=05d85f18ef" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                  <div id="mc_embed_signup_scroll" class="mc-form">
+                                      <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your email address" required>
+                                      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                      <div class="mc-news" aria-hidden="true"><input type="text" name="b_6bbb9b6f5827bd842d9640c82_05d85f18ef" tabindex="-1" value=""></div>
+                                      <button id="mc-embedded-subscribe" type="submit" name="subscribe">Subscribe</button>
+                                  </div>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-4 col-md-6">
+                      <span>Copyright &copy; 2018 <a href="https://hastech.company/">HasTech</a>. All rights reserved.</span>
+                  </div>
+                  <div class="col-lg-4 col-md-2">
+                      <div class="social-link">
+                          <a href="https://twitter.com/devitemsllc"><i class="fa fa-twitter"></i></a>
+                          <a href="https://plus.google.com/117030536115448126648"><i class="fa fa-google-plus"></i></a>
+                          <a href="https://www.facebook.com/devitems/"><i class="fa fa-facebook"></i></a>
+                          <a href="https://www.youtube.com/channel/UC_AH6tcQrJa8txh_rNbL-AQ"><i class="fa fa-youtube"></i></a>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4">
+                      <div class="payment-image">
+                          <img src="Images/VESA.png" alt="">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+</footer>
+<!-- Footer Area End -->
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>    
+</body>
+</html>
